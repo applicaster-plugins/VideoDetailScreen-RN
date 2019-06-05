@@ -1,0 +1,218 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`VideoDetail renders correctly 1`] = `
+<View
+  style={
+    Object {
+      "backgroundColor": "rgb(16, 17, 22)",
+      "flex": 1,
+    }
+  }
+>
+  <RCTScrollView>
+    <View>
+      <View
+        style={
+          Object {
+            "alignItems": "flex-start",
+            "backgroundColor": "rgb(16, 17, 22)",
+            "flex": 0,
+            "flexDirection": "column",
+            "justifyContent": "flex-start",
+            "paddingBottom": 20,
+            "paddingHorizontal": 0,
+            "paddingTop": 0,
+          }
+        }
+      >
+        <View
+          style={
+            Object {
+              "flex": 0,
+              "width": 414,
+            }
+          }
+        >
+          <View
+            style={undefined}
+          >
+            <View
+              accessibilityComponentType={undefined}
+              accessibilityLabel={undefined}
+              accessibilityTraits={undefined}
+              accessible={true}
+              hitSlop={undefined}
+              nativeID={undefined}
+              onLayout={undefined}
+              onResponderGrant={[Function]}
+              onResponderMove={[Function]}
+              onResponderRelease={[Function]}
+              onResponderTerminate={[Function]}
+              onResponderTerminationRequest={[Function]}
+              onStartShouldSetResponder={[Function]}
+              style={undefined}
+              testID={undefined}
+            >
+              <Image
+                source={
+                  Object {
+                    "uri": "http://manager.vidibuscloud.net/mediafiles/8893/6575/6215/8eb65e3055be0136b7f5543d7edaf0a0/opener-tennis-allgemein_1024x576.jpg",
+                  }
+                }
+                style={
+                  Array [
+                    undefined,
+                    Object {
+                      "height": 232.875,
+                      "width": 414,
+                    },
+                  ]
+                }
+              />
+              <View
+                style={
+                  Array [
+                    Object {
+                      "position": "absolute",
+                      "zIndex": 1,
+                    },
+                    Object {
+                      "height": 232.875,
+                      "width": 414,
+                    },
+                  ]
+                }
+              >
+                <Image
+                  source={
+                    Object {
+                      "uri": "RN_Video_Detail_Video_Play_Btn",
+                    }
+                  }
+                  style={
+                    Array [
+                      undefined,
+                      Object {
+                        "left": 192,
+                        "top": 101.4375,
+                      },
+                    ]
+                  }
+                />
+              </View>
+            </View>
+          </View>
+          <View
+            style={
+              Object {
+                "flex": 0,
+                "justifyContent": "flex-start",
+                "paddingLeft": 16,
+                "paddingRight": 16,
+                "paddingTop": 20,
+              }
+            }
+          >
+            <View
+              style={
+                Object {
+                  "alignItems": "flex-start",
+                  "justifyContent": "flex-start",
+                  "marginVertical": 4,
+                  "width": "100%",
+                }
+              }
+            >
+              <Text
+                accessible={true}
+                allowFontScaling={true}
+                ellipsizeMode="tail"
+                style={
+                  Object {
+                    "color": "rgb(239, 239, 239)",
+                    "fontFamily": "Exo2-SemiBold",
+                    "fontSize": 24,
+                    "letterSpacing": 0,
+                    "lineHeight": 28,
+                    "textAlign": "left",
+                  }
+                }
+              >
+                German Masters Series – TVM Open 2019 - Tag 3
+              </Text>
+            </View>
+            <View
+              style={
+                Object {
+                  "alignItems": "flex-start",
+                  "justifyContent": "flex-start",
+                  "marginVertical": 12,
+                  "width": "100%",
+                }
+              }
+            >
+              <Text
+                accessible={true}
+                allowFontScaling={true}
+                ellipsizeMode="tail"
+                style={
+                  Object {
+                    "color": "rgb(239, 239, 239)",
+                    "fontFamily": "Exo2-Medium",
+                    "fontSize": 13,
+                    "fontStyle": "normal",
+                    "fontWeight": "500",
+                    "letterSpacing": 0,
+                    "lineHeight": 16,
+                    "textAlign": "left",
+                  }
+                }
+              >
+                Do. 9 Mai 2019 • 10:00 BST
+              </Text>
+            </View>
+            <View
+              style={
+                Array [
+                  Object {
+                    "alignItems": "flex-start",
+                    "justifyContent": "flex-start",
+                    "marginTop": 12,
+                    "width": "99%",
+                  },
+                  Object {
+                    "paddingBottom": 20,
+                  },
+                ]
+              }
+            >
+              <Text
+                accessible={true}
+                allowFontScaling={true}
+                ellipsizeMode="tail"
+                numberOfLines={undefined}
+                style={
+                  Object {
+                    "color": "rgb(135,136,147)",
+                    "fontFamily": "Exo2-Regular",
+                    "fontSize": 15,
+                    "fontStyle": "normal",
+                    "fontWeight": "normal",
+                    "letterSpacing": 0,
+                    "lineHeight": 22,
+                    "textAlign": "left",
+                  }
+                }
+              >
+                *Sportdeutschland.TV* zeigt die German Masters Series - TVM Open 2019 vom 07. bis zum 11.05. aus Troisdorf live und on demand.
+
+Hol Dir SPORTDEUTSCHLAND.TV PLUS und genieße unser Angebot komplett werbefrei.
+              </Text>
+            </View>
+          </View>
+        </View>
+      </View>
+    </View>
+  </RCTScrollView>
+</View>
+`;

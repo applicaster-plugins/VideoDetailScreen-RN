@@ -1,0 +1,65 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Video renders correctly 1`] = `
+<View
+  style={undefined}
+>
+  <View
+    accessibilityComponentType={undefined}
+    accessibilityLabel={undefined}
+    accessibilityTraits={undefined}
+    accessible={true}
+    hitSlop={undefined}
+    nativeID={undefined}
+    onLayout={undefined}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={undefined}
+    testID={undefined}
+  >
+    <Image
+      source={
+        Object {
+          "uri": "http://manager.vidibuscloud.net/mediafiles/8893/6575/6215/8eb65e3055be0136b7f5543d7edaf0a0/opener-tennis-allgemein_1024x576.jpg",
+        }
+      }
+      style={
+        Array [
+          undefined,
+          Object {
+            "height": 232.875,
+            "width": 414,
+          },
+        ]
+      }
+    />
+    <View
+      style={
+        Array [
+          Object {
+            "position": "absolute",
+            "zIndex": 1,
+          },
+          Object {
+            "height": 232.875,
+            "width": 414,
+          },
+        ]
+      }
+    >
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+        style={undefined}
+      >
+        Test text
+      </Text>
+    </View>
+  </View>
+</View>
+`;

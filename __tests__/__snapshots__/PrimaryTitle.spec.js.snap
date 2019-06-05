@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PrimaryTitle renders correctly 1`] = `
+<View
+  style={
+    Object {
+      "alignItems": "flex-start",
+      "justifyContent": "flex-start",
+      "marginVertical": 4,
+      "width": "100%",
+    }
+  }
+>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+    style={
+      Object {
+        "color": "rgb(239, 239, 239)",
+        "fontFamily": "Exo2-SemiBold",
+        "fontSize": 24,
+        "letterSpacing": 0,
+        "lineHeight": 28,
+        "textAlign": "left",
+      }
+    }
+  >
+    Test Title
+  </Text>
+</View>
+`;

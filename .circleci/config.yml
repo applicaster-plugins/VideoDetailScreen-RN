@@ -1,12 +1,12 @@
 defaults: &defaults
-  working_directory: ~/react-native-boilerplate
+  working_directory: ~/VideoDetailScreen-RN
   docker:
     - image: applicaster/zapp-node:0.4
 
 persisted_folders: &persisted_folders
   root: ~/
   paths:
-    - react-native-boilerplate/*
+    - VideoDetailScreen-RN/*
 
 version: 2
 jobs:
@@ -15,14 +15,14 @@ jobs:
     steps:
       - restore_cache:
           keys:
-            - v1-react-native-boilerplate-{{ .Branch }}-{{ .Revision }}
-            - v1-react-native-boilerplate-{{ .Branch }}-
-            - v1-react-native-boilerplate-
+            - v1-VideoDetailScreen-RN-{{ .Branch }}-{{ .Revision }}
+            - v1-VideoDetailScreen-RN-{{ .Branch }}-
+            - v1-VideoDetailScreen-RN-
 
       - checkout
 
       - save_cache:
-          key: v1-react-native-boilerplate-{{ .Branch }}-{{ .Revision }}
+          key: v1-VideoDetailScreen-RN-{{ .Branch }}-{{ .Revision }}
           paths:
             - .git
 
