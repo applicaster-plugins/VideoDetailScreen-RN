@@ -60,7 +60,7 @@
       "section": "Features",
       "type": "checkbox",
       "key": "autoplay",
-      "tooltip_text": "Autoplay on load",
+      "tooltip_text": "Autoplay on load (WARNING: not currently implemented)",
       "default": 0
     },
     {
@@ -93,7 +93,7 @@
       "section": "Localization",
       "type": "dropdown",
       "key": "locale",
-      "tooltip_text": "ISO 639-1 language code",
+      "tooltip_text": "ISO 639-1 language code (WARNING: not currently implemented)",
       "options": [
         "de",
         "th",
