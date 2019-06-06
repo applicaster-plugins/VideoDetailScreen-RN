@@ -1,6 +1,6 @@
-# React Native Screen Boilerplate
+# React Native Video Detail Screen
 
-Sarter RN project
+Fully configurable react native video detail screen
 
 ## Installation
 

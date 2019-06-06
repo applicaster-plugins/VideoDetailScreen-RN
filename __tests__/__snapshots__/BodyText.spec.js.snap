@@ -1,0 +1,42 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BodyText renders correctly 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "alignItems": "flex-start",
+        "justifyContent": "flex-start",
+        "marginTop": 12,
+        "width": "99%",
+      },
+      Object {
+        "borderBottomColor": "rgb(224,224,224)",
+        "borderBottomWidth": 1,
+        "paddingBottom": 20,
+      },
+    ]
+  }
+>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+    numberOfLines={undefined}
+    style={
+      Object {
+        "color": "rgb(135,136,147)",
+        "fontFamily": "Exo2-Regular",
+        "fontSize": 15,
+        "fontStyle": "normal",
+        "fontWeight": "normal",
+        "letterSpacing": 0,
+        "lineHeight": 22,
+        "textAlign": "left",
+      }
+    }
+  >
+    Test text
+  </Text>
+</View>
+`;

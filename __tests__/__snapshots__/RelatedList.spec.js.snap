@@ -1,0 +1,102 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`RelatedList renders correctly 1`] = `
+<View
+  style={
+    Array [
+      Object {},
+      Object {
+        "flex": 0,
+        "marginLeft": 0,
+        "marginTop": 20,
+      },
+    ]
+  }
+>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+    style={
+      Object {
+        "color": "rgb(255, 255, 255)",
+        "fontFamily": "Exo2-SemiBold",
+        "fontSize": 20,
+        "letterSpacing": -0.4,
+        "lineHeight": 26,
+        "marginBottom": 20,
+      }
+    }
+  >
+    Related Videos
+  </Text>
+  <View
+    accessibilityComponentType={undefined}
+    accessibilityLabel={undefined}
+    accessibilityTraits={undefined}
+    accessible={true}
+    hitSlop={undefined}
+    nativeID={undefined}
+    onLayout={undefined}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Array [
+        undefined,
+        Object {
+          "marginBottom": 24,
+        },
+      ]
+    }
+    testID={undefined}
+  >
+    <View
+      style={undefined}
+    >
+      <Image
+        source={
+          Object {
+            "uri": "http://manager.vidibuscloud.net/mediafiles/8893/6575/6215/8eb65e3055be0136b7f5543d7edaf0a0/opener-tennis-allgemein_1024x576.jpg",
+          }
+        }
+        style={undefined}
+      />
+    </View>
+    <View
+      style={undefined}
+    >
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+        numberOfLines={1}
+        style={undefined}
+      >
+        HEUTE / 09:00 Uhr
+      </Text>
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+        numberOfLines={2}
+        style={undefined}
+      >
+        German Masters Series – TVM Open 2019 - Tag 3
+      </Text>
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+        numberOfLines={1}
+        style={undefined}
+      >
+        Tennis
+      </Text>
+    </View>
+  </View>
+</View>
+`;

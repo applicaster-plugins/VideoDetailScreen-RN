@@ -9,19 +9,172 @@
   "author_name": "applicaster",
   "author_email": "support@applicaster.com",
   "manifest_version": "0.1.0",
-  "name": "react-native-boilerplate",
-  "description": "Description of you plugin",
+  "name": "VideoDetailScreen",
+  "description": "React Native configurable video details screen",
   "type": "general",
-  "identifier": "react-native-boilerplate",
-  "whitelisted_account_ids": [],
+  "identifier": "VideoDetailScreen",
+  "whitelisted_account_ids": ["5af5868756379b000f6c2c45"],
   "min_zapp_sdk": "7.0.0",
   "deprecated_since_zapp_sdk": "",
   "unsupported_since_zapp_sdk": "",
   "ui_builder_support": true,
   "screen": true,
   "react_native": true,
-  "react_bundle_url": "https://assets-production.applicaster.com/zapp/react-native-bundles/react-native-boilerplate/0_50_4/0.1.0/android/index.android.bundle.js",
+  "react_bundle_url": "https://assets-production.applicaster.com/zapp/react-native-bundles/VideoDetailScreen/0_50_4/0.1.0/android/index.android.bundle.js",
   "extra_dependencies": [],
   "npm_dependencies": [],
-  "project_dependencies": []
+  "project_dependencies": [],
+  "dependency_name": "@applicaster/videodetailscreen-rn",
+  "dependency_version": "0.1.0",
+  "custom_configuration_fields": [
+    {
+      "section": "Style",
+      "type": "text",
+      "key": "backgroundViewColor",
+      "value": "#101116"
+    },
+    {
+      "section": "Style",
+      "key": "presentation",
+      "type": "text",
+      "tooltip_text": "How we should present this plugin? Possible values: present, push, presentNoNavigation, pushNoNavigation, asAChild",
+      "default": "presentNoNavigation"
+    },
+    {
+      "section": "Style",
+      "type": "dropdown",
+      "key": "theme",
+      "tooltip_text": "Style theme",
+      "options": ["black"],
+      "default": "black"
+    },
+    {
+      "section": "Features",
+      "type": "dropdown",
+      "key": "play_inline",
+      "tooltip_text": "Play Inline",
+      "options": ["never", "always", "wifi"],
+      "default": "never"
+    },
+    {
+      "section": "Features",
+      "type": "checkbox",
+      "key": "autoplay",
+      "tooltip_text": "Autoplay on load (WARNING: not currently implemented)",
+      "default": 0
+    },
+    {
+      "section": "Features",
+      "type": "text",
+      "key": "related_url_scheme",
+      "tooltip_text": "Url scheme to fetch related content by id (id will be appended)"
+    },
+    {
+      "section": "Features",
+      "type": "text",
+      "key": "video_url_scheme",
+      "tooltip_text": "Url scheme to fetch video by id (id will be appended)"
+    },
+    {
+      "section": "Features",
+      "type": "checkbox",
+      "key": "hide_live_bar",
+      "tooltip_text": "Hide live status bar",
+      "default": 0
+    },
+    {
+      "section": "Features",
+      "type": "checkbox",
+      "key": "compact_description",
+      "tooltip_text": "Toggle to hide/show full description text",
+      "default": 0
+    },
+    {
+      "section": "Localization",
+      "type": "dropdown",
+      "key": "locale",
+      "tooltip_text": "ISO 639-1 language code (WARNING: not currently implemented)",
+      "options": [
+        "de",
+        "th",
+        "ca",
+        "he",
+        "en",
+        "es",
+        "fr",
+        "ar",
+        "zh",
+        "tr",
+        "nl",
+        "pt",
+        "pl",
+        "it",
+        "ja"
+      ],
+      "default": "en"
+    },
+    {
+      "section": "Localization",
+      "type": "text",
+      "key": "lbl_more",
+      "tooltip_text": "More label",
+      "default": "More"
+    },
+    {
+      "section": "Localization",
+      "type": "text",
+      "key": "lbl_fewer",
+      "tooltip_text": "Fewer label",
+      "default": "Fewer"
+    },
+    {
+      "section": "Localization",
+      "type": "text",
+      "key": "lbl_days",
+      "tooltip_text": "Days label",
+      "default": "Days"
+    },
+    {
+      "section": "Localization",
+      "type": "text",
+      "key": "lbl_hours",
+      "tooltip_text": "Hours label",
+      "default": "Hours"
+    },
+    {
+      "section": "Localization",
+      "type": "text",
+      "key": "lbl_minutes",
+      "tooltip_text": "Minutes label",
+      "default": "Minutes"
+    },
+    {
+      "section": "Localization",
+      "type": "text",
+      "key": "lbl_seconds",
+      "tooltip_text": "Seconds label",
+      "default": "Seconds"
+    },
+    {
+      "section": "Localization",
+      "type": "text",
+      "key": "lbl_related_videos",
+      "tooltip_text": "Related Videos label",
+      "default": "Related Videos"
+    },
+    {
+      "section": "Localization",
+      "type": "text",
+      "key": "lbl_live_now",
+      "tooltip_text": "LIVE NOW label",
+      "default": "LIVE NOW"
+    },
+    {
+      "section": "Localization",
+      "type": "text",
+      "key": "lbl_event_starts_in",
+      "tooltip_text": "Event starts in label",
+      "default": "Event starts in"
+    }
+  ]
 }
