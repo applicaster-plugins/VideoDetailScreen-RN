@@ -22,7 +22,6 @@ exports[`BodyText renders correctly 1`] = `
     accessible={true}
     allowFontScaling={true}
     ellipsizeMode="tail"
-    numberOfLines={undefined}
     style={
       Object {
         "color": "rgb(135,136,147)",

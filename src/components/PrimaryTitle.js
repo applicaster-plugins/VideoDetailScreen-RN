@@ -15,7 +15,14 @@ class PrimaryTitle extends PureComponent {
     const { children } = this.props;
     return (
       <View style={this.styles.container}>
-        <Text style={this.styles.text}>{children}</Text>
+        <Text
+          accessible={true}
+          allowFontScaling={true}
+          ellipsizeMode="tail"
+          style={this.styles.text}
+        >
+          {children}
+        </Text>
       </View>
     );
   }

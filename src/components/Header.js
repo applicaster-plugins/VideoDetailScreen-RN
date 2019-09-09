@@ -25,7 +25,10 @@ export default class Header extends Component {
   render() {
     return (
       <View style={this.styles.container}>
-        <TouchableHighlight onPress={this.handleClose} style={this.styles.btn}>
+        <TouchableHighlight
+          onPress={this.handleClose}
+          style={[this.styles.touchableHighlight, this.styles.btn]}
+        >
           <Image source={assets.iconClose} style={this.styles.closeImg} />
         </TouchableHighlight>
       </View>

@@ -11,6 +11,9 @@ export const styles = () => {
       height: 44,
       width: '100%'
     },
+    touchableHighlight: {
+      backgroundColor: 'transparent'
+    },
     btn: {
       justifyContent: 'center',
       alignItems: 'center',
