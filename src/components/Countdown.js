@@ -67,28 +67,17 @@ export default class Countdown extends Component {
       <View style={styles.textWrapper}>
         <View style={[this.baseStyles.wrapper, styles.wrapper]}>
           <Text
-            accessible={true}
-            allowFontScaling={true}
-            ellipsizeMode="tail"
             style={[this.baseStyles.timeTxt, styles.timeTxt, styles.digitWidth]}
           >
             {arr[0]}
           </Text>
           <Text
-            accessible={true}
-            allowFontScaling={true}
-            ellipsizeMode="tail"
             style={[this.baseStyles.timeTxt, styles.timeTxt, styles.digitWidth]}
           >
             {arr[1]}
           </Text>
         </View>
-        <Text
-          accessible={true}
-          allowFontScaling={true}
-          ellipsizeMode="tail"
-          style={[this.baseStyles.timeLabelTxt, styles.timeLabelTxt]}
-        >
+        <Text style={[this.baseStyles.timeLabelTxt, styles.timeLabelTxt]}>
           {label}
         </Text>
       </View>

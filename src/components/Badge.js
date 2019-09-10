@@ -2,16 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Text from '@applicaster/london-rn-components/src/SafeText';
 
-const Badge = ({ style, labelText }) => (
-  <Text
-    accessible={true}
-    allowFontScaling={true}
-    ellipsizeMode="tail"
-    style={style}
-  >
-    {labelText}
-  </Text>
-);
+const Badge = ({ style, labelText }) => <Text style={style}>{labelText}</Text>;
 
 Badge.propTypes = {
   style: PropTypes.any,

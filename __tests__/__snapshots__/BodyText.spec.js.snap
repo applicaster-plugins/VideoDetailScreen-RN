@@ -19,9 +19,6 @@ exports[`BodyText renders correctly 1`] = `
   }
 >
   <Text
-    accessible={true}
-    allowFontScaling={true}
-    ellipsizeMode="tail"
     style={
       Object {
         "color": "rgb(135,136,147)",

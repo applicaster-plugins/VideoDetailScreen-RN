@@ -18,9 +18,6 @@ class BodyText extends PureComponent {
     return (
       <View style={[this.styles.container, style]}>
         <Text
-          accessible={true}
-          allowFontScaling={true}
-          ellipsizeMode="tail"
           style={this.styles.text}
           numberOfLines={!compactDescription || collapseText ? undefined : 3}
         >

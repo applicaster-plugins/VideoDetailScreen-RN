@@ -14,14 +14,7 @@ class MetaText extends PureComponent {
     const { children } = this.props;
     return (
       <View style={this.styles.container}>
-        <Text
-          accessible={true}
-          allowFontScaling={true}
-          ellipsizeMode="tail"
-          style={this.styles.text}
-        >
-          {children}
-        </Text>
+        <Text style={this.styles.text}>{children}</Text>
       </View>
     );
   }

@@ -41,11 +41,7 @@ exports[`Video renders correctly 1`] = `
         ]
       }
     >
-      <Text
-        accessible={true}
-        allowFontScaling={true}
-        ellipsizeMode="tail"
-      >
+      <Text>
         Test text
       </Text>
     </View>

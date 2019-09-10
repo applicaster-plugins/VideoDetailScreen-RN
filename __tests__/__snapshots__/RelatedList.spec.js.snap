@@ -55,25 +55,16 @@ exports[`RelatedList renders correctly 1`] = `
     </View>
     <View>
       <Text
-        accessible={true}
-        allowFontScaling={true}
-        ellipsizeMode="tail"
         numberOfLines={1}
       >
         HEUTE / 09:00 Uhr
       </Text>
       <Text
-        accessible={true}
-        allowFontScaling={true}
-        ellipsizeMode="tail"
         numberOfLines={2}
       >
         German Masters Series – TVM Open 2019 - Tag 3
       </Text>
       <Text
-        accessible={true}
-        allowFontScaling={true}
-        ellipsizeMode="tail"
         numberOfLines={1}
       >
         Tennis

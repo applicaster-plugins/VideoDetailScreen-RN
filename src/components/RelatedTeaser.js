@@ -34,31 +34,13 @@ export default class RelatedTeaser extends PureComponent {
             {Boolean(label) && <Badge style={styles.label} labelText={label} />}
           </View>
           <View style={styles.infoBox}>
-            <Text
-              accessible={true}
-              allowFontScaling={true}
-              ellipsizeMode="tail"
-              style={styles.dateTime}
-              numberOfLines={1}
-            >
+            <Text style={styles.dateTime} numberOfLines={1}>
               {dateTime}
             </Text>
-            <Text
-              accessible={true}
-              allowFontScaling={true}
-              ellipsizeMode="tail"
-              style={styles.title}
-              numberOfLines={2}
-            >
+            <Text style={styles.title} numberOfLines={2}>
               {title}
             </Text>
-            <Text
-              accessible={true}
-              allowFontScaling={true}
-              ellipsizeMode="tail"
-              style={styles.sectionLabel}
-              numberOfLines={1}
-            >
+            <Text style={styles.sectionLabel} numberOfLines={1}>
               {sportLabel}
             </Text>
           </View>
