@@ -13,7 +13,7 @@
     "lint": "eslint .",
     "format": "prettier --config ./.prettierrc --write \"{,!(node_modules)/**/}*.js\"",
     "start": "node node_modules/react-native/local-cli/cli.js start",
-    "build": "npm run build:ios && bpm run build:android",
+    "build": "npm run build:ios && npm run build:android",
     "build:ios": "react-native bundle --platform ios --dev false --entry-file index.ios.js --bundle-output tmp/build/ios/index.ios.bundle.js",
     "build:android": "react-native bundle --platform android --dev false --entry-file index.android.js --bundle-output tmp/build/android/index.android.bundle.js",
     "build:staging": "npm run build:ios && npm run build:android",
@@ -23,10 +23,9 @@
     "deploy:ios": "npm run build:ios && aws s3 sync tmp/build/ios s3://assets-production.applicaster.com/zapp/react-native-bundles/VideoDetailScreen/$npm_package_version/ios --region us-east-1 --grants read=uri=http://acs.amazonaws.com/groups/global/AllUsers",
     "deploy:android": "npm run build:android && aws s3 sync tmp/build/android s3://assets-production.applicaster.com/zapp/react-native-bundles/VideoDetailScreen/$npm_package_version/android --region us-east-1 --grants read=uri=http://acs.amazonaws.com/groups/global/AllUsers",
     "deploy:staging": "npm run deploy:staging:ios && npm run deploy:staging:android",
-    "deploy:staging:ios": "npm run build:staging:ios && aws s3 sync tmp/build/ios s3://assets-staging.applicaster.com/zapp/react-native-bundles/staging/VideoDetailScreen/$npm_package_version/ios --region us-east-1 --grants read=uri=http://acs.amazonaws.com/groups/global/AllUsers",
-    "deploy:staging:android": "npm run build:staging:android && aws s3 sync tmp/build/android s3://assets-staging.applicaster.com/zapp/react-native-bundles/VideoDetailScreen/$npm_package_version/android --region us-east-1 --grants read=uri=http://acs.amazonaws.com/groups/global/AllUsers",
+    "deploy:staging:ios": "npm run build:staging:ios && aws s3 sync tmp/build/ios s3://assets-development.applicaster.com/zapp/react-native-bundles/VideoDetailScreen/$npm_package_version/ios --region us-east-1 --grants read=uri=http://acs.amazonaws.com/groups/global/AllUsers",
+    "deploy:staging:android": "npm run build:staging:android && aws s3 sync tmp/build/android s3://assets-development.applicaster.com/zapp/react-native-bundles/VideoDetailScreen/$npm_package_version/android --region us-east-1 --grants read=uri=http://acs.amazonaws.com/groups/global/AllUsers",
     "plugin:update": "zappifest publish --manifest plugin-manifest.android.json && zappifest publish --manifest plugin-manifest.ios.json",
-    "prepublish": "npm run build",
     "postpublish": "npm run plugin:update"
   },
   "repository": {
