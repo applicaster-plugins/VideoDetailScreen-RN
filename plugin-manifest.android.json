@@ -20,7 +20,7 @@
   "ui_builder_support": true,
   "screen": true,
   "react_native": true,
-  "react_bundle_url": "https://assets-production.applicaster.com/zapp/react-native-bundles/VideoDetailScreen/0_59_10/1.0.0/android/index.android.bundle.js",
+  "react_bundle_url": "https://assets-production.applicaster.com/zapp/react-native-bundles/VideoDetailScreen/1.0.0/android/index.android.bundle.js",
   "extra_dependencies": [],
   "npm_dependencies": [],
   "project_dependencies": [],
