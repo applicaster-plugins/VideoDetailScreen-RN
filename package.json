@@ -1,6 +1,6 @@
 {
   "name": "@applicaster/videodetailscreen-rn",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "React Native configurable video details screen",
   "main": "./export.js",
   "engine": {
@@ -13,18 +13,20 @@
     "lint": "eslint .",
     "format": "prettier --config ./.prettierrc --write \"{,!(node_modules)/**/}*.js\"",
     "start": "node node_modules/react-native/local-cli/cli.js start",
-    "build": "npm run build:ios && bpm run build:android",
+    "build": "npm run build:ios && npm run build:android",
     "build:ios": "react-native bundle --platform ios --dev false --entry-file index.ios.js --bundle-output tmp/build/ios/index.ios.bundle.js",
     "build:android": "react-native bundle --platform android --dev false --entry-file index.android.js --bundle-output tmp/build/android/index.android.bundle.js",
     "build:staging": "npm run build:ios && npm run build:android",
     "build:staging:ios": "react-native bundle --platform ios --dev true --entry-file index.ios.js --bundle-output tmp/build/ios/index.ios.bundle.js",
     "build:staging:android": "react-native bundle --platform android --dev true --entry-file index.android.js --bundle-output tmp/build/android/index.android.bundle.js",
     "deploy": "npm run deploy:ios && npm run deploy:android",
-    "deploy:ios": "npm run build:ios && aws s3 sync tmp/build/ios s3://assets-production.applicaster.com/zapp/react-native-bundles/VideoDetailScreen/0_50_4/0.1.0/ios --region us-east-1 --grants read=uri=http://acs.amazonaws.com/groups/global/AllUsers",
-    "deploy:android": "npm run build:android && aws s3 sync tmp/build/android s3://assets-production.applicaster.com/zapp/react-native-bundles/VideoDetailScreen/0_50_4/0.1.0/android --region us-east-1 --grants read=uri=http://acs.amazonaws.com/groups/global/AllUsers",
+    "deploy:ios": "npm run build:ios && aws s3 sync tmp/build/ios s3://assets-production.applicaster.com/zapp/react-native-bundles/VideoDetailScreen/$npm_package_version/ios --region us-east-1 --grants read=uri=http://acs.amazonaws.com/groups/global/AllUsers",
+    "deploy:android": "npm run build:android && aws s3 sync tmp/build/android s3://assets-production.applicaster.com/zapp/react-native-bundles/VideoDetailScreen/$npm_package_version/android --region us-east-1 --grants read=uri=http://acs.amazonaws.com/groups/global/AllUsers",
     "deploy:staging": "npm run deploy:staging:ios && npm run deploy:staging:android",
-    "deploy:staging:ios": "npm run build:staging:ios && aws s3 sync tmp/build/ios s3://assets-staging.applicaster.com/zapp/react-native-bundles/staging/VideoDetailScreen/0_50_4/0.1.0/ios --region us-east-1 --grants read=uri=http://acs.amazonaws.com/groups/global/AllUsers",
-    "deploy:staging:android": "npm run build:staging:android && aws s3 sync tmp/build/android s3://assets-staging.applicaster.com/zapp/react-native-bundles/VideoDetailScreen/0_50_4/0.1.0/android --region us-east-1 --grants read=uri=http://acs.amazonaws.com/groups/global/AllUsers"
+    "deploy:staging:ios": "npm run build:staging:ios && aws s3 sync tmp/build/ios s3://assets-development.applicaster.com/zapp/react-native-bundles/VideoDetailScreen/$npm_package_version/ios --region us-east-1 --grants read=uri=http://acs.amazonaws.com/groups/global/AllUsers",
+    "deploy:staging:android": "npm run build:staging:android && aws s3 sync tmp/build/android s3://assets-development.applicaster.com/zapp/react-native-bundles/VideoDetailScreen/$npm_package_version/android --region us-east-1 --grants read=uri=http://acs.amazonaws.com/groups/global/AllUsers",
+    "plugin:update": "zappifest publish --manifest plugin-manifest.android.json && zappifest publish --manifest plugin-manifest.ios.json",
+    "postpublish": "npm run plugin:update"
   },
   "repository": {
     "type": "git",
@@ -51,10 +53,8 @@
     "seamless-immutable": "^7.1.2"
   },
   "devDependencies": {
-    "babel-cli": "^6.26.0",
-    "babel-jest": "^21.2.0",
-    "babel-preset-react-native": "^2.1.0",
-    "babel-register": "^6.18.0",
+    "@babel/core": "^7.5.5",
+    "babel-jest": "^24.8.0",
     "eslint": "^4.11.0",
     "eslint-config-airbnb": "^16.1.0",
     "eslint-config-prettier": "^4.1.0",
@@ -64,11 +64,12 @@
     "eslint-plugin-react": "^7.4.0",
     "eslint-plugin-react-native": "^2.3.2",
     "husky": "^2.3.0",
-    "jest": "^21.2.1",
-    "jest-cli": "^21.2.1",
+    "jest": "^24.8.0",
+    "jest-cli": "^24.8.0",
+    "metro-react-native-babel-preset": "^0.55.0",
     "prettier": "^1.17.1",
-    "react": "^16.0.0",
-    "react-native": "^0.50.4",
+    "react": "16.8.3",
+    "react-native": "0.59.10",
     "react-native-zapp-bridge": "latest",
     "react-test-renderer": "^16.8.6"
   },

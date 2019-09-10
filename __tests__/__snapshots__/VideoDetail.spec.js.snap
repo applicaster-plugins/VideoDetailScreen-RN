@@ -33,25 +33,15 @@ exports[`VideoDetail renders correctly 1`] = `
             }
           }
         >
-          <View
-            style={undefined}
-          >
+          <View>
             <View
-              accessibilityComponentType={undefined}
-              accessibilityLabel={undefined}
-              accessibilityTraits={undefined}
               accessible={true}
-              hitSlop={undefined}
-              nativeID={undefined}
-              onLayout={undefined}
               onResponderGrant={[Function]}
               onResponderMove={[Function]}
               onResponderRelease={[Function]}
               onResponderTerminate={[Function]}
               onResponderTerminationRequest={[Function]}
               onStartShouldSetResponder={[Function]}
-              style={undefined}
-              testID={undefined}
             >
               <Image
                 source={
@@ -124,9 +114,6 @@ exports[`VideoDetail renders correctly 1`] = `
               }
             >
               <Text
-                accessible={true}
-                allowFontScaling={true}
-                ellipsizeMode="tail"
                 style={
                   Object {
                     "color": "rgb(239, 239, 239)",
@@ -152,9 +139,6 @@ exports[`VideoDetail renders correctly 1`] = `
               }
             >
               <Text
-                accessible={true}
-                allowFontScaling={true}
-                ellipsizeMode="tail"
                 style={
                   Object {
                     "color": "rgb(239, 239, 239)",
@@ -187,10 +171,6 @@ exports[`VideoDetail renders correctly 1`] = `
               }
             >
               <Text
-                accessible={true}
-                allowFontScaling={true}
-                ellipsizeMode="tail"
-                numberOfLines={undefined}
                 style={
                   Object {
                     "color": "rgb(135,136,147)",

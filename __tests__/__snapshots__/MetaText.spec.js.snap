@@ -12,9 +12,6 @@ exports[`MetaText renders correctly 1`] = `
   }
 >
   <Text
-    accessible={true}
-    allowFontScaling={true}
-    ellipsizeMode="tail"
     style={
       Object {
         "color": "rgb(239, 239, 239)",

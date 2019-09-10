@@ -8,7 +8,7 @@
   "platform": "ios",
   "author_name": "applicaster",
   "author_email": "support@applicaster.com",
-  "manifest_version": "0.1.0",
+  "manifest_version": "1.0.0",
   "name": "VideoDetailScreen",
   "description": "React Native configurable video details screen",
   "type": "general",
@@ -20,12 +20,12 @@
   "ui_builder_support": true,
   "screen": true,
   "react_native": true,
-  "react_bundle_url": "https://assets-production.applicaster.com/zapp/react-native-bundles/VideoDetailScreen/0_50_4/0.1.0/ios/index.ios.bundle.js",
+  "react_bundle_url": "https://assets-production.applicaster.com/zapp/react-native-bundles/VideoDetailScreen/1.0.0/ios/index.ios.bundle.js",
   "extra_dependencies": [],
   "npm_dependencies": [],
   "project_dependencies": [],
   "dependency_name": "@applicaster/videodetailscreen-rn",
-  "dependency_version": "0.1.0",
+  "dependency_version": "1.0.0",
   "custom_configuration_fields": [
     {
       "section": "Style",
